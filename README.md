@@ -28,7 +28,7 @@ Rusche is a library for writing an interpreter for a Scheme-like language in Rus
   error: 7 is not a symbol.
     1| (define plus
     2|     (lambda (x 7)
-     |                ^
+     |                ^        ;; Thanks to `Span`, we can show exactly where the error is originated
   ```
 
 ## Usage
